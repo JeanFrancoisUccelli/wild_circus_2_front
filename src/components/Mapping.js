@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Map, TileLayer, Marker, Popup, CircleMarker } from "react-leaflet";
-import L, { popup } from "leaflet";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 import CircusTentIcon from "../assets/pictures/circusTentIcon.png";
 import "leaflet/dist/leaflet.css";
 const axios = require("axios");
