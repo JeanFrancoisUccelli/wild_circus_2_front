@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://wildcircus2back.herokuapp.com";
+const API_URL = "https://wildcircus2back.herokuapp.com/";
 
 class AuthService {
   login(username, password) {
