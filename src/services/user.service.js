@@ -9,15 +9,15 @@ class UserService {
   }
 
   getUserBoard() {
-    return axios.get(API_URL + 'user', { headers: authHeader() });
+    return axios.get(API_URL + 'user', { headers: authHeader(), crossdomain: true } );
   }
 
   getModeratorBoard() {
-    return axios.get(API_URL + 'mod', { headers: authHeader() });
+    return axios.get(API_URL + 'mod', { headers: authHeader(), crossdomain: true });
   }
 
   getAdminBoard() {
-    return axios.get(API_URL + 'admin', { headers: authHeader() });
+    return axios.get(API_URL + 'admin', { headers: authHeader(), crossdomain: true });
   }
 }
 
