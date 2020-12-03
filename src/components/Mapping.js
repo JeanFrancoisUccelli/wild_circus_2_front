@@ -19,7 +19,7 @@ const Mapping = () => {
 
   const getData = () => {
     axios
-      .get("http://localhost:8080/lieux")
+      .get("https://wildcircus2back.herokuapp.com/lieux")
       //  .then((res) => {res.data.map(e=>{lieu.push(e)})})
       .then((res) => setLieu(res.data))
       // .then(res=>{console.log(res.data[0].name , res.data[0].lat)})

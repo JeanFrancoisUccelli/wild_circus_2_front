@@ -13,7 +13,7 @@ export default function Reservation(props) {
     const makeResa = (e) => {
         e.preventDefault();
         axios // envoi ds la bdd
-            .post(`http://localhost:8080/resas`, newResa)
+            .post(`https://wildcircus2back.herokuapp.com/resas`, newResa)
             .then(res => {
                 if (res.err) {
                     alert(res.err);
