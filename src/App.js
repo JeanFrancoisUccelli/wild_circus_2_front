@@ -54,7 +54,7 @@ class App extends Component {
     return (
       <Router>
         <nav class="navbar navbar-expand-lg navbar-dark" id="bd-navbar">
-          <Link to={"/"} className="navbar-brand">
+          <Link to={currentUser ? "/user" : "/"} className="navbar-brand">
             <img src={WCLogo} className="logo" alt="logo" />
           </Link>
 
@@ -72,11 +72,11 @@ class App extends Component {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to={"/Home"} className="nav-link">
                   Home
                 </Link>
-              </li>
+              </li> */}
 
               {showModeratorBoard && (
                 <li className="nav-item">
