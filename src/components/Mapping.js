@@ -32,7 +32,7 @@ const Mapping = () => {
     getData();
   }, []);
 
-  // console.log(lieu)
+  console.log(lieu)
   // {lieu.forEach((clé, valeur)=>{return(console.log(clé+valeur))})}
 
   return (

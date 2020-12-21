@@ -18,7 +18,7 @@ export default function Reservation(props) {
                 if (res.err) {
                     alert(res.err);
                 } else {
-                    alert(`La réservation pour ${newResa.name} a été enregistrée avec succès!`);
+                    alert(`La réservation pour le ${newResa.date} au nom de ${newResa.name} a été enregistrée avec succès!`);
                 }
             });
     };

@@ -37,7 +37,6 @@ export default class Home extends Component {
           <h3>Welcome on Wild Circus web-app<br />You should register and login to get all our content<br/>as a user membership</h3>
           <Carrousel />
           <p style={{ textAlign: 'center' }}>{this.state.content}</p>
-          
           </header>
       </div>
     );
