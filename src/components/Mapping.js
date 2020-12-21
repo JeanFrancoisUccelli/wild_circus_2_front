@@ -58,7 +58,7 @@ const Mapping = () => {
             <Popup>
               <h4>{e.name}</h4>
               <h5>Voulez-vous reserver ici ?</h5>
-              <a href="/Resa" class="btn btn-primary">
+              <a style={{ color: 'white' }} href="/Resa" class="btn btn-primary">
                 Oui !
               </a>
             </Popup>
