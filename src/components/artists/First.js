@@ -12,16 +12,16 @@ const First = () => {
           />
           <div className="title">
             <h2>Duo Pasha & Morris</h2>
-            <h3>Les clowns</h3>
+            <h3>Clowns</h3>
 
             <p className="overview">
-              Personnages incontournables de la piste, attendus aussi bien des
-              enfants que des parents.
-              <br />
-              Ils présentent des reprises tout au long du spectacle,
-              <br />
-              nous les retrouvons en fin de programme pour une entrée dans la
-              plus grande tradition clownesque !
+            Unmissable characters of the track, expected from both
+               children than parents.
+               <br />
+               They present covers throughout the show,
+               <br />
+               we find them at the end of the program for entry into the
+               greatest clown tradition!
             </p>
           
                       </div>

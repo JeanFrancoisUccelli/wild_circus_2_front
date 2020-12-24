@@ -7,6 +7,7 @@
     margin-top: 50px;
     background-color:white;
     box-shadow: 8px 8px #f99797d4;
+    height: 100%;
 }
 
 .reservation h1 {
@@ -14,6 +15,7 @@
 }
 
 .reservationInput {
+    width: 70%;
     padding-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
@@ -22,7 +24,6 @@
 .form_resa {
     display:flex;
     flex-direction: column;
-    align-items: stretch;
      padding-bottom: 15px;
 }
 
@@ -36,3 +37,15 @@
     width:45vw;
     align-self:flex-end;
 }
+
+@media screen and (max-width: 480px) {
+    .reservation {
+        height: 500px;
+        padding-top: 5px;
+        margin-top: 5px;}
+    .form_resa {height: 500px;}
+    .reservation h1 {
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+    }

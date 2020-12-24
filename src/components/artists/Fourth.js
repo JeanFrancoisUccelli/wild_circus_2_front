@@ -13,18 +13,18 @@ const Fourth = () => {
 
         <div className="title">
           <h2>Guillaume Dottin</h2>
-          <h3>Grandes Illusions</h3>
+          <h3>Great Illusions</h3>
           <p className="overview">
-            C’est dans un univers onirique et mystérieux que Guillaume Dottin
-            vous fera voyager.
-            <br />
-            Ses grandes illusions sont des créations uniques pour le cirque
-            Pinder.
-            <br />
-            Un numéro surprenant à vous couper le souffle….
-            <br />
-            D’ailleurs arriverez vous à retenir votre souffle autant que notre
-            illusionniste dans son aquarium…
+          It is in a dreamlike and mysterious universe that Guillaume Dottin
+             will make you travel.
+             <br />
+             His great illusions are unique creations for the circus
+             Pinder.
+             <br />
+             A surprising number that will take your breath away….
+             <br />
+             Besides, you will be able to hold your breath as much as our
+             illusionist in his aquarium ...
           </p>
         </div>
       </div>

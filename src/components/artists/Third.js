@@ -13,16 +13,16 @@ const Third = () => {
 
         <div className="title">
           <h2>Valentine</h2>
-          <h3>Cerceau aérien</h3>
+          <h3>Aerial hoop</h3>
           <p className="overview">
-            Après avoir séduit le public parisien avec ses numéros de
-            contorsions et de tissus aérien,
-            <br />
-            la charmante Valentine revient cette année pour le plus grand
-            plaisir de tous avec un magnifique numéro de cerceau aérien.
-            <br />
-            Un numéro alliant la grâce, la souplesse et bien évidemment le
-            talent de cette jeune artiste.
+          After having seduced the Parisian public with his acts of
+             contortions and aerial tissue,
+             <br />
+             the charming Valentine returns this year for the biggest
+             everyone's pleasure with a magnificent aerial hoop number.
+             <br />
+             A number combining grace, flexibility and of course the
+             talent of this young artist.
           </p>
         </div>
       </div>

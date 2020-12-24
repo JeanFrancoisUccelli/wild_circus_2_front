@@ -3,6 +3,7 @@ import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import CircusTentIcon from "../assets/pictures/circusTentIcon.png";
 import "leaflet/dist/leaflet.css";
+import './Mapping.css'
 const axios = require("axios");
 
 const circusIcon = L.icon({
@@ -36,6 +37,8 @@ const Mapping = () => {
   // {lieu.forEach((clé, valeur)=>{return(console.log(clé+valeur))})}
 
   return (
+    <div className="container">
+    <h1>where to find us</h1>
     <Map
       center={[49, 2]}
       zoom={4}
@@ -57,15 +60,16 @@ const Mapping = () => {
           <Marker position={[e.lat, e.long]} icon={circusIcon}>
             <Popup>
               <h4>{e.name}</h4>
-              <h5>Voulez-vous reserver ici ?</h5>
+              <h5>Want to book a show ?</h5>
               <a style={{ color: 'white' }} href="/Resa" class="btn btn-primary">
-                Oui !
+                Go !
               </a>
             </Popup>
           </Marker>
         );
       })}
     </Map>
+    </div>
   );
 };
 

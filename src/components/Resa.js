@@ -1,9 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./resa.css";
 
 export default function Reservation(props) {
     const [newResa, setNewResa] = useState({  })
+    const [lieu, setLieu] = useState([]);
+    const [resas, setResas] = useState([]);
+
+    const getData = () => {
+      axios
+        .get("https://wildcircus2back.herokuapp.com/lieux")
+        //  .then((res) => {res.data.map(e=>{lieu.push(e)})})
+        .then((res) => setLieu(res.data))
+        // .then(res=>{console.log(res.data[0].name , res.data[0].lat)})
+        
+        .then (axios
+        .get("https://wildcircus2back.herokuapp.com/resas")
+        //  .then((res) => {res.data.map(e=>{lieu.push(e)})})
+        .then((res) => setResas(res.data))
+        // .then(res=>{console.log(res.data[0].name , res.data[0].lat)})
+        .catch((error) => {
+          console.log(error);
+        }));
+    };
+  
+    useEffect(() => {
+      getData();
+    }, []);
 
 
     const validateNewResa = (e) => {
@@ -23,34 +46,38 @@ export default function Reservation(props) {
             });
     };
 
+console.log(resas)
+
     return (
         <div className="reservation">
-            <h1>Réservation</h1>
+            <h1>Booking</h1>
             <form className="form_resa">
             <div className="reservationInput">
-                {/* <div>
-                    <label htmlFor="spectacle_id">Spectacle :</label>
+                <div>
+                    <label htmlFor="spectacle_id">Shows :</label><br />
                     <select name="spectale_id" onChange={validateNewResa}>
-                        <option value={props.datas.id}>
-                            {props.datas.titre} {props.datas.dates}
-                        </option>
+                       { lieu.map((e) => {
+                            return (
+                        <option key={e.id}>
+                           { e.name}
+                        </option>)})}
                     </select>
-                </div> */}
+                </div>
 
                 <div>
-                    <label htmlFor="name">Nom :</label><br />
+                    <label htmlFor="name">Your name :</label><br />
                     <input name="name" onChange={validateNewResa} />
                 </div>
 
                 <div>
                         <label htmlFor="date">date :</label><br />
-                    <input name="date" onChange={validateNewResa} />
+                    <input type="date" name="date" onChange={validateNewResa} />
                 </div>
 
                 
 
                 <div>
-                        <label htmlFor="nbPlaces">Places :</label><br />
+                        <label htmlFor="nbPlaces">show tickets :</label><br />
                     <select name="nbPlace" onChange={validateNewResa}>
                         <option>1</option>
                         <option>2</option>
@@ -60,11 +87,11 @@ export default function Reservation(props) {
                 </div>
                 <div className="boutonsClass">
                 <div className="btn-resa">
-                    <button class="btn btn-secondary btn-lg btn-block btn-sm" onClick={props.handlePopup}>
-                        Annuler
+                    <button style={{marginLeft: 'auto', marginRight: 'auto', width: '70%'}} class="btn btn-secondary btn-lg btn-block btn-sm" onClick={props.handlePopup}>
+                        Cancel
           </button>
-                    <button class="btn btn-primary btn-lg btn-block btn-sm" onClick={makeResa}>Réserver</button>
-                    <a class="btn btn-info btn-lg btn-block btn-sm" href="/User">Retour</a>
+                    <button style={{marginLeft: 'auto', marginRight: 'auto', width: '70%'}} class="btn btn-primary btn-lg btn-block btn-sm" onClick={makeResa}>Book here</button>
+                    <a style={{marginLeft: 'auto', marginRight: 'auto', width: '70%'}} class="btn btn-info btn-lg btn-block btn-sm" href="/User">Back</a>
                 </div>
                 </div>
             </form>

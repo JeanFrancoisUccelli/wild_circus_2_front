@@ -5,16 +5,16 @@ import './AboutUs.css'
 const AboutUs = () => {
     return (
         <>
-            <h1 style={{ marginLeft: "40%" }}>About Us</h1>
+            <h1>About Us</h1>
             <br />
             <img
                 src={lion}
                 alt="lion"
-                height="220vh"
+                
                 style={{ float: "right", marginLeft: "20px" }}
                 class="img-fluid" 
             />
-            <section>
+            <section id="section">
                 <p>
                     We are proud to be among the few pioneer circus companies who with the
                     usage of the most up to date technologies stepped into a new, modern

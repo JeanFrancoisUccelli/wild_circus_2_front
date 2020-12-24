@@ -15,15 +15,15 @@ const Second = () => {
           <h2>Loïc del Egido</h2>
           <h3>Diabolos</h3>
           <p className="overview">
-            Loïc del Egido, formé à l’Escola de Circ Rogelio Rivel de Barcelone
-            de 2006 à 2009 il se spécialise en diabolos.
-            <br />
-            Il intègre la Scuola di Circo Flic di Torino en 2009 et se
-            perfectionne en diabolos et acrobatie au sol.
-            <br />
-            Il travaille ensuite dans le célèbre cirque Suisse « Starlight » ou
-            encore sur la Comédie Music-Hall « Quelle Histoire » produit par la
-            Flambée.
+          Loïc del Egido, trained at the Escola de Circ Rogelio Rivel in Barcelona
+             from 2006 to 2009 he specialized in diabolos.
+             <br />
+             He joined the Scuola di Circo Flic di Torino in 2009 and
+             perfects in diabolos and acrobatics on the floor.
+             <br />
+             He then worked in the famous Swiss circus "Starlight" or
+             again on the Comédie Music-Hall "Quelle Histoire" produced by the
+             Outbreak.
           </p>
         </div>
       </div>

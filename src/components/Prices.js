@@ -8,7 +8,7 @@ export default function Prices() {
 
       <div class="table-responsive">
         <table class="table">
-          <thead class="thead-dark">
+          <thead style={{ backgroundColor: '#7952b3'}}>
             <tr className="table-primary">
               <th></th>
               <th>Adults</th>
