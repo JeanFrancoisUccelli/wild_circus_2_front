@@ -48,11 +48,6 @@ class App extends Component {
     AuthService.logout();
   }
 
-  // onClickOutside() {
-  //   linkTo
-  // }
-
-
   render() {
     const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
 
@@ -109,12 +104,13 @@ class App extends Component {
               <li className="nav-item">
                 <Link to={"/artists/Artist"} className="nav-link">
                 <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false">
+                class="btn btn-outline-dark"
+                style={{color: "white"}}
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false">
                   Artists
                   </button>
                 </Link>
@@ -122,7 +118,8 @@ class App extends Component {
               <li className="nav-item">
                 <Link to={"/Perf"} className="nav-link">
                 <button
-            class="navbar-toggler"
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -135,7 +132,8 @@ class App extends Component {
               <li className="nav-item">
                 <Link to={"/Prices"} className="nav-link">
                 <button
-            class="navbar-toggler"
+            class="btn btn-outline-dark"
+            style={{color: "white"}}
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -148,7 +146,8 @@ class App extends Component {
               <li className="nav-item">
                 <Link to={"/AboutUs"} className="nav-link">
                 <button
-            class="navbar-toggler"
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -201,7 +200,7 @@ class App extends Component {
           </div>
         </nav>
 
-        <div className="container mt-3" id="container">
+        <div className="container mt-3">
           <Switch>
             <Route exact path={["/", "/home"]} component={Home} />
             <Route exact path="/login" component={Login} />
