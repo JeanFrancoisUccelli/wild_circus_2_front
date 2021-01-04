@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WCLogo from "../assets/pictures/WCLogo.png";
 import AuthService from "../services/auth.service";
