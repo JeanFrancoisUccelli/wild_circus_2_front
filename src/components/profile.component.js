@@ -6,12 +6,27 @@ export default class Profile extends Component {
     super(props);
 
     this.state = {
-      currentUser: AuthService.getCurrentUser()
+      currentUser: AuthService.getCurrentUser(),
+      tickets: []
     };
   }
 
+  const makeResa = (e) => {
+    e.preventDefault();
+    axios // envoi ds la bdd
+        .get(`https://wildcircus2back.herokuapp.com/resas`)
+        .then(res => {
+            if (res.err) {
+                alert(res.err);
+            } else {
+              res => {this.setState(tickets = res.json)};
+            }
+        });
+};
+
   render() {
-    const { currentUser } = this.state;
+    const { currentUser, tickets } = this.state;
+    console.log(tickets)
 
     return (
       <div className="container">
