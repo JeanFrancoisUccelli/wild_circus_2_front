@@ -69,7 +69,7 @@ html, body {
 
 .content-carrousel:hover {
 	animation-play-state: paused;
-	cursor: pointer;
+	cursor: not-allowed;
 }
 
 .content-carrousel figure {
