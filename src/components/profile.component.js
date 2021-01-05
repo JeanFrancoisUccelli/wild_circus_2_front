@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import AuthService from "../services/auth.service";
+import axios from "axios";
+
 
 export default class Profile extends Component {
   constructor(props) {
@@ -11,17 +13,17 @@ export default class Profile extends Component {
     };
   }
 
-  const makeResa = (e) => {
+   makeResa = (e) => {
     e.preventDefault();
-    axios // envoi ds la bdd
+    axios
         .get(`https://wildcircus2back.herokuapp.com/resas`)
         .then(res => {
             if (res.err) {
                 alert(res.err);
             } else {
-              res => {this.setState(tickets = res.json)};
+              this.setState(tickets = res.data)};
             }
-        });
+        );
 };
 
   render() {
