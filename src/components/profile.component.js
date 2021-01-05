@@ -21,7 +21,8 @@ export default class Profile extends Component {
             if (res.err) {
                 alert(res.err);
             } else {
-              this.setState(tickets = res.data)};
+              console.log(res);
+              this.setState({tickets: res.data})};
             }
         );
 };
