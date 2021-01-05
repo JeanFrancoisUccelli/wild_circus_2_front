@@ -50,6 +50,7 @@ export default class Profile extends Component {
               ))}
           </p>
         </p>
+        <button onClick={() => {this.makeResa()}}>See my tickets</button>
       </div>
     );
   }
