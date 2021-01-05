@@ -13,8 +13,7 @@ export default class Profile extends Component {
     };
   }
 
-   makeResa = (e) => {
-    e.preventDefault();
+   makeResa = () => {
     axios
         .get(`https://wildcircus2back.herokuapp.com/resas`)
         .then(res => {
