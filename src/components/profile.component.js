@@ -50,6 +50,19 @@ export default class Profile extends Component {
           </p>
         </p>
         <button onClick={() => {this.makeResa()}}>See my tickets</button>
+        <div>
+          {tickets.length>0 ? (
+tickets.map(ticket => (
+  <div>
+  <p>{ticket.name}</p>
+  <p>{ticket.date}</p>
+  <p>{ticket.nbPlace}</p>
+  </div>
+))
+          ):(
+            <p>Vous n'avez pas de reservation en cours</p>
+          )})
+        </div>
       </div>
     );
   }
