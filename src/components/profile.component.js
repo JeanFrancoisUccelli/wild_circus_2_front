@@ -54,9 +54,7 @@ export default class Profile extends Component {
           {tickets.length>0 ? (
 tickets.map(ticket => (
   <div>
-  <p>{ticket.name}</p>
-  <p>{ticket.date}</p>
-  <p>{ticket.nbPlace}</p>
+  <p>Name: {ticket.name}, Date: {ticket.date}, {ticket.nbPlace} ticket(s)</p>
   </div>
 ))
           ):""}
