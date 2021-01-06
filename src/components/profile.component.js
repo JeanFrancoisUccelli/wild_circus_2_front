@@ -59,9 +59,7 @@ tickets.map(ticket => (
   <p>{ticket.nbPlace}</p>
   </div>
 ))
-          ):(
-            <p>Vous n'avez pas de reservation en cours</p>
-          )})
+          ):""}
         </div>
       </div>
     );
