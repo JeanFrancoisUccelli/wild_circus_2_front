@@ -5,6 +5,7 @@ import "./resa.css";
 export default function Reservation(props) {
   const [newResa, setNewResa] = useState({});
   const [lieu, setLieu] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [resas, setResas] = useState([]);
 
   const getData = () => {
