@@ -54,7 +54,7 @@ export default function Reservation(props) {
       });
   };
 
-  console.log(resas);
+  console.log(window.location.search.substring(1))
 
   return (
     <div className="reservation">
@@ -64,11 +64,16 @@ export default function Reservation(props) {
           <div>
             <label htmlFor="spectacle_id">Shows :</label>
             <br />
+            {window.location.search.substring(1) ? (
+                <select name="spectale_id" onChange={validateNewResa}>
+                <option>{window.location.search.substring(1)}</option>
+                </select>
+            ) : (
             <select name="spectale_id" onChange={validateNewResa}>
               {lieu.map((e) => {
                 return <option key={e.id}>{e.name}</option>;
               })}
-            </select>
+            </select>)}
           </div>
 
           <div>
