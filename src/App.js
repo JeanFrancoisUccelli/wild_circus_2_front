@@ -97,7 +97,16 @@ class App extends Component {
               {currentUser && (
                 <li className="nav-item">
                   <Link to={"/user"} className="nav-link">
+                  <button
+                class="btn btn-outline-dark"
+                style={{color: "white"}}
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false">
                     Landing Page
+                    </button>
                   </Link>
                 </li>
               )}
@@ -157,28 +166,70 @@ class App extends Component {
                   </button>
                 </Link>
               </li>
+
+              {currentUser ? (
+                <>
+                <li className="nav-item">
+                  <Link to={"/Resa"} className="nav-link">
+                    <button
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+                    Resa
+                    </button>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"/Mapping"} className="nav-link">
+                    <button
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+                    Map
+                    </button>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"/profile"} className="nav-link">
+                    <button
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+                    {currentUser.username}
+                    </button>
+                  </Link>
+                </li>
+                </>
+            ) : ( null)}
+
             </ul>
 
             {currentUser ? (
               <div className="navbar-nav mr-0">
                 <li className="nav-item">
-                  <Link to={"/Resa"} className="nav-link">
-                    Resa
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={"/Mapping"} className="nav-link">
-                    Map
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={"/profile"} className="nav-link">
-                    {currentUser.username}
-                  </Link>
-                </li>
-                <li className="nav-item">
                   <a href="/login" className="nav-link" onClick={this.logOut}>
+                    <button
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
                     LogOut
+                    </button>
                   </a>
                 </li>
               </div>
@@ -186,13 +237,31 @@ class App extends Component {
               <div className="navbar-nav mr-0">
                 <li className="nav-item">
                   <Link to={"/login"} className="nav-link">
+                    <button
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
                     Login
+                    </button>
                   </Link>
                 </li>
 
                 <li className="nav-item">
                   <Link to={"/register"} className="nav-link">
+                    <button
+           class="btn btn-outline-dark"
+           style={{color: "white"}}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
                     Sign Up
+                    </button>
                   </Link>
                 </li>
               </div>
