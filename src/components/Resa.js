@@ -91,12 +91,12 @@ export default function Reservation(props) {
           <div>
             <label htmlFor="nbPlaces">show tickets :</label>
             <br />
-            <select name="nbPlace" onChange={validateNewResa}>
-              <option>Choose how many tickets</option>
+            <input name="nbPlace" onChange={validateNewResa} />
+              {/* <option>Choose how many tickets</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
-            </select>
+            </select> */}
           </div>
         </div>
         <div className="boutonsClass">
