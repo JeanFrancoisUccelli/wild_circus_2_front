@@ -1,3 +1,5 @@
+[![Logo](asstets.pictures.WCLogo.png?raw=true&link=https://www.https://www.linkedin.com/in/jeff-uccelli/)](https://www.https://www.linkedin.com/in/jeff-uccelli/)
+
 ## Descriptions
 
 Complete end of training exercise, with front end and back end to set up. This was a real red thread even during my end of training internship, and I was able to present it during the passage of the DWWM title.
