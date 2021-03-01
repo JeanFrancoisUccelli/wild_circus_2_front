@@ -1,6 +1,6 @@
 ## Démo here
 
-[!(<img src="src/assets/pictures/WCLogo.png" width="200px" alt="Logo" />)](https://jeff-uccelli-cv-online.netlify.app/)
+[<img src="src/assets/pictures/WCLogo.png" width="200px" target="blank" alt="Logo" />](https://jeff-uccelli-cv-online.netlify.app/)
 
 ## Descriptions
 
