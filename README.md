@@ -1,6 +1,6 @@
 ## Démo here
 
-[<img src="src/assets/pictures/WCLogo.png" width="200px" target="blank" alt="Logo" />](https://wildcircus2.netlify.app/)
+[<img src="src/assets/pictures/WCLogo.png" width="200px" target="_blank" alt="Logo" />](https://wildcircus2.netlify.app/)
 
 ## Descriptions
 
