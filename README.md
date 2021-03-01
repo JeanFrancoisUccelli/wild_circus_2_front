@@ -1,4 +1,6 @@
-[![Logo](src/assets/pictures/WCLogo.png?raw=true)](https://jeff-uccelli-cv-online.netlify.app/)
+## Démo here
+
+[!(<img src="src/assets/pictures/WCLogo.png" width="200px" alt="Logo" />)](https://jeff-uccelli-cv-online.netlify.app/)
 
 ## Descriptions
 
