@@ -1,4 +1,4 @@
-[![Logo](asstets.pictures.WCLogo.png?raw=true&link=https://www.https://www.linkedin.com/in/jeff-uccelli/)](https://www.https://www.linkedin.com/in/jeff-uccelli/)
+[![Logo](src/assets/pictures/WCLogo.png)](https://jeff-uccelli-cv-online.netlify.app/)
 
 ## Descriptions
 
